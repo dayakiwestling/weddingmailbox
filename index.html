@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aster's mailbox</title>
+    <link href="stylesindex.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="img/iconito/favicon_io/favicon.ico">
+  </head>
+  <body>
+    <div class="whole-page">
+      <div class="texto">
+        <p>Leave a Lovely</p>
+        <h1>Message</h1>
+        <p>For Us</p>
+      </div>
+      <div class="mailbox-imagen"></div>
+      <div class="write-message">
+        <p class="write-it" id="write" style="cursor: pointer">Send Message</p>
+      </div>
+      <div class="pop-up popupmessage" style="display: none">
+        <div class="writing-space">
+          <textarea id="mensaje-texto" placeholder="¡Escribe aquí lo que quieras!" /></textarea>
+        </div>
+        <div class="signature-space">
+          <input id="mensaje-firma" type="text" placeholder="No te olvides de firmar." />
+        </div>
+        <div class="mensajeboton">
+          <button id="btn-enviar-mensaje" class="enviarmensajito">send</button>
+        </div>
+      </div>
+      <div class="texto">
+        <p class="see-messages" style="cursor: pointer">See Messages</p>
+      </div>
+      <div class="pop-up popupaviso" style="display: none">
+        <p>
+          ¡ALTO! Sólo usuarios autorizadosㅤㅤ[Airyna y Dayaki Aster]ㅤㅤestán
+          permitidos.
+        </p>
+        <div class="writing-spaces">
+          <input
+            type="text"
+            id="password-input"
+             placeholder="Escribe aquí la contraseña"
+          />
+        </div>
+        <div class="sendpassword">
+          <p id="send-password">Enviar</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="pop-ups.js"></script>
+</html>

@@ -1,0 +1,316 @@
+@font-face {
+  font-family: "IM Fell Types";
+  src: url("fonts/imfelltypes/imfellenglish/FeENsc2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GaramondItalic";
+  src: url("fonts/garamond/1592-glc-garamond-font/1592GLCGaramondItalic.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GaramondBold";
+  src: url("fonts/garamond/1592-glc-garamond-font/1592GLCGaramondBold.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IlShakeFest";
+  src: url("fonts/ilshakefest/ilshake.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PortuguesAreaicoLectura";
+  src: url("fonts/portugues-arcaico-lectura/PortuguesArcaicoLectura.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LoveLetter";
+  src: url("fonts/loveletter/LoveletterNo9.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif; /*a cambiar*/
+  background-image: url("img/background.JPG"), url("img/background-rotado.JPG");
+  background-repeat: repeat-y, repeat-x;
+  background-position: center top, center bottom;
+  background-size: cover;
+  justify-self: center;
+  padding-top: 8%;
+  padding-bottom: 30%;
+  font-family: "IM Fell Types", sans-serif;
+  font-size: 10px;
+}
+
+.whole-page {
+  justify-items: center;
+  justify-content: center;
+  padding: 2%;
+  padding-bottom: 15%;
+}
+
+.texto {
+  justify-content: center;
+  text-align: center;
+  font-family: "GaramondBold";
+  font-size: 20px;
+}
+
+.texto p {
+  margin: 2px;
+  background: url("img/goldtexture.jpg") center/cover;
+  background-clip: text;
+  color: rgba(134, 49, 0, 0.293);
+  margin-bottom: -110px;
+}
+
+.texto h1 {
+  font-family: "LoveLetter";
+  font-weight: lighter;
+  font-size: 60px;
+  margin-top: -0px;
+  margin-bottom: -30px;
+  transform: rotate(-7.5deg) translateX(0);
+  background: url("img/painttexture.jpg") center/cover;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  overflow: visible;
+}
+
+.mailbox-imagen {
+  width: 100%;
+  max-width: 100%; /* tamaño máximo */
+  aspect-ratio: 3 / 2; /* mantiene proporción del mailbox */
+  background-image: url("img/templatemailbox.PNG");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.write-message {
+  padding: 15px 150px;
+  margin: 40px;
+  border-radius: 12px;
+  background: linear-gradient(
+    135deg,
+    #daedfd80,
+    #d6dfb487,
+    #ffdbae83,
+    #fddade89,
+    #fbdafd85
+  );
+  transition: ease-in 0.5s;
+  text-align: center;
+}
+
+.write-message:hover {
+  background: linear-gradient(
+    135deg,
+    #daedfd,
+    #d6dfb4,
+    #ffdbae,
+    #fddade,
+    #fbdafd
+  );
+  text-decoration: underline;
+}
+
+.popupmessage {
+  width: 300px;
+  height: auto;
+  filter: drop-shadow(-10px 0 10px #ffdbae52) drop-shadow(10px 0 10px #fbdafd56);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.writing-space,
+.signature-space {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: "IM Fell Types";
+  font-size: 10px;
+  margin-bottom: 30px;
+}
+
+.signature-space input {
+  height: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #779314;
+  font-family: "IM Fell Types";
+  font-size: 10px;
+}
+
+.signature-space input::placeholder {
+  color: #779314;
+}
+
+.writing-space textarea {
+  min-height: 200px;
+  max-height: 120px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #779314;
+  font-family: "IM Fell Types";
+  font-size: 10px;
+  resize: none;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+textarea::-webkit-scrollbar {
+  width: 8px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: #f0f0f0ab;
+  border-radius: 6px;
+  height: 80%;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background: #d2e9fb;
+  border-radius: 6px;
+  height: 80%;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background: #c8e5fc;
+}
+
+.writing-space textarea::placeholder {
+  color: #779314;
+}
+
+.mensajeboton {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.enviarmensajito {
+  padding: 3px 50px;
+  padding-bottom: 5px;
+  border-radius: 6px;
+  border: none;
+  color: #a959ea;
+  font-family: "GaramondItalic";
+  font-size: 20px;
+  transition: ease-in 0.2s;
+}
+
+.enviarmensajito:hover {
+  color: #f26f81;
+  cursor: pointer;
+  padding-bottom: 8px;
+  scale: 110%;
+  margin-bottom: -3px;
+}
+
+.popupaviso {
+  width: 300px;
+  height: auto;
+  filter: drop-shadow(-10px 0 10px #ffdbae52) drop-shadow(10px 0 10px #fbdafd56);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.popupaviso p {
+  margin: 10%;
+}
+
+.writing-spaces {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: "IM Fell Types";
+  font-size: 10px;
+  margin-bottom: 30px;
+}
+
+.writing-spaces input {
+  height: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #c8e5fc;
+  font-family: "IM Fell Types";
+  font-size: 10px;
+  margin-top: 20px;
+}
+
+.sendpassword {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+#send-password {
+  font-size: 15px;
+  color: #f26f81;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  display: inline-block;
+}
+
+#send-password:hover {
+  color: #9b6ff2;
+  cursor: pointer;
+}
+
+#send-password::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 15%;
+  height: 1.5px;
+  background: currentColor;
+  transform: translateX(-50%) scaleX(1);
+  transform-origin: center;
+  transition: 0.3s ease;
+}
+
+#send-password:hover::after {
+  width: 100%;
+  transform: translateX(-50%) scaleX(1);
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
